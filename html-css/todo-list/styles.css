@@ -1,0 +1,50 @@
+body {
+  background-color: cyan;
+}
+
+h1 {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.todo-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.todo-list > li {
+  margin: 12px 0;
+}
+
+.sub-item {
+  margin-left: 20px;
+}
+
+input[type='checkbox']:hover {
+  box-shadow: 0 0 5px 2px rgba(0, 128, 255, 0.6);
+  border-radius: 4px; /* keeps the glow box neat */
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  background-color: yellow;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: purple;
+}
+
+a:focus {
+  outline: 2px solid blue; /* thickness + color */
+  outline-offset: 3px;
+}
+
+a:active {
+  color: red;
+}
+
+a:visited {
+  color: pink;
+}
