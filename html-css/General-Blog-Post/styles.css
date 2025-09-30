@@ -1,0 +1,51 @@
+.blog-post-card {
+  background: white;
+  width: 500px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.post-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  border: 3px solid #333;
+  box-shadow: 0 10px 20px rgba(0, 252, 109, 0.3);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease; /* smooth hover */
+}
+
+.post-img:hover {
+  transform: scale(1.05); /* slight zoom */
+  box-shadow: 0 15px 25px rgba(0, 252, 109, 0.5); /* stronger shadow */
+}
+
+.post-content {
+  padding: 25px 50px 75px 50px;
+}
+
+.post-title,
+.post-excerpt {
+  text-align: center;
+  margin-top: 20px;
+  color: green;
+}
+
+.read-more {
+  text-decoration: none;
+  font-weight: bold;
+  background-color: pink;
+  margin: 25px 50px 75px 50px;
+  padding: 5px;
+  display: inline-block;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.read-more:hover {
+  background-color: hotpink;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
