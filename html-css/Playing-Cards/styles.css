@@ -1,0 +1,35 @@
+body {
+  background: lightgray;
+}
+
+h1 {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 2em;
+}
+
+#playing-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  align-self: flex-start;
+}
+
+.middle {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+}
+
+.right {
+  align-self: flex-end;
+}
