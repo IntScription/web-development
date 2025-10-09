@@ -1,0 +1,59 @@
+/* file: styles.css */
+span {
+  display: inline-block;
+}
+
+tr[class='read'] {
+  background-image: linear-gradient(to right, #d1e8ff, #a0c4ff);
+}
+
+tr[class='to-read'] {
+  background-image: linear-gradient(to right, #fff3cd, #ffeeba);
+}
+
+tr[class='in-progress'] {
+  background-image: linear-gradient(to right, #e2f0cb, #cdeac0);
+}
+
+tr[class='to-read'] span[class='status'] {
+  border: 1px solid #f0ad4e;
+  background-image: linear-gradient(to right, #fdf6e3, #fceabb);
+}
+
+tr[class='read'] span[class='status'] {
+  border: 1px solid #5cb85c;
+  background-image: linear-gradient(to right, #dff0d8, #c8e6c9);
+}
+
+tr[class='in-progress'] span[class='status'] {
+  border: 1px solid #5bc0de;
+  background-image: linear-gradient(to right, #d9edf7, #b3e5fc);
+}
+
+span[class='status'],
+span[class^='rate'] {
+  height: 35px;
+  width: auto;
+  padding: 4px;
+}
+
+span[class^='rate'] > span {
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  margin: 2px;
+  height: 10px;
+  width: 10px;
+  background-color: #eee;
+}
+
+span[class~='one'] > span:first-child {
+  background-image: linear-gradient(to right, #ffcccb, #ff9999);
+}
+
+span[class~='two'] > span:nth-child(-n + 2) {
+  background-image: linear-gradient(to right, #ffd700, #ffec8b);
+}
+
+span[class~='three'] > span {
+  background-image: linear-gradient(to right, #90ee90, #32cd32);
+}
