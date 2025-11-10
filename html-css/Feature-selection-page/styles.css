@@ -1,0 +1,60 @@
+body {
+  background-color: #ffe8e8;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-decoration: underline;
+  text-align: center;
+  padding: 20px 0;
+  color: #333;
+}
+
+.feature-card-container {
+  max-width: 250px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  margin: 40px auto;
+  text-align: left;
+  background-color: #fff;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+  font-size: 1.1em;
+  color: #222;
+  cursor: pointer;
+}
+
+input[type='checkbox'] {
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #f1be32;
+  border-radius: 6px;
+  background-color: white;
+  vertical-align: middle;
+  margin-right: 12px;
+}
+
+input[type='checkbox']:hover {
+  transform: scale(1.1);
+  border-color: #f4a300;
+}
+
+input[type='checkbox']:checked {
+  background-color: #f1be32;
+  border-color: #b38b00;
+}
+
+input[type='checkbox']:checked::after {
+  content: '✓';
+  display: block;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  line-height: 20px;
+  font-size: 16px;
+}
